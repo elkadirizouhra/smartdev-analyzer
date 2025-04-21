@@ -27,30 +27,7 @@ Logger	SLF4J + Logback
 Tests	JUnit
 ---------------------------------------------- 🧱 Architecture du projet---------------------------------------------------
 
-smartdev-analyzer/
-│
-├── src/
-│   └── main/
-│       └── java/com/smartdev/analyzer/
-│           ├── SmartDevAnalyzerApplication.java
-│           ├── analyzer/
-│           │   ├── ControllerScanner.java
-│           │   ├── SecurityChecker.java
-│           │   ├── DependencyAnalyzer.java
-│           │   └── DocGenerator.java
-│           └── model/
-│               ├── EndpointInfo.java
-│               └── SecurityIssue.java
-│
-├── resources/
-│   └── application.properties
-│
-├── test/
-│   └── analyzer/
-│       └── ControllerScannerTest.java
-│
-├── pom.xml
-└── README.md
+![image](https://github.com/user-attachments/assets/d75bb36e-2618-4d6f-b67f-5c7b4b96e584)
 
 
 ---------------------------------------------- 🚀 Utilisation---------------------------------------------------
