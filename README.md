@@ -14,6 +14,12 @@
 
 ---
 
+
+
+
+
+
+
 ## 🧰 Stack technique
 
 | Composant         | Technologie            |
@@ -22,25 +28,50 @@
 | Framework        | Spring Boot            |
 | Analyse Code     | JavaParser             |
 | Analyse Sécurité | OWASP Dependency-Check |
-| Logger           | SLF
+| Logger           | SLF4J + Logback
+|Tests	           | JUnit
 
 
 
----------------------------------------------- 🧱 Architecture du projet---------------------------------------------------
+
+
+
+
+---
+
+
+
+
+
+
+
+## 🧱 Architecture du projet
+
+
 
 ![image](https://github.com/user-attachments/assets/d75bb36e-2618-4d6f-b67f-5c7b4b96e584)
 
 
----------------------------------------------- 🚀 Utilisation---------------------------------------------------
+
+
+---
+
+
+
+
+
+
+
+## 🚀 Utilisation
 
 Cloner le projet :
 
-git clone https://github.com/elkadirizouhra/smartdev-analyzer.git
-cd smartdev-analyzer
-Construire et lancer :
+-git clone https://github.com/elkadirizouhra/smartdev-analyzer.git
+-cd smartdev-analyzer
+-Construire et lancer :
 
-mvn clean install
-mvn spring-boot:run -Dproject.path=/chemin/vers/le/projet
+-mvn clean install
+-mvn spring-boot:run -Dproject.path=/chemin/vers/le/projet
 
 Sortie attendue :
 Un fichier report.json contenant les endpoints et les problèmes de sécurité détectés
@@ -56,7 +87,17 @@ Un fichier apidoc.json ou apidoc.md avec la documentation générée
     "returns": "List<User>"
   }
 ]
------------------------------------------------🧪 À venir---------------------------------------------------
+
+
+---
+
+
+
+
+
+
+
+## 🧪 À venir
 
 Analyse statique plus poussée (ex: injection SQL)
 
