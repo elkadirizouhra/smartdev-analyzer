@@ -1,30 +1,31 @@
-                                                                🧠 SmartDevAnalyzer
+# 🧠 SmartDevAnalyzer
 
-SmartDevAnalyzer est un outil intelligent développé avec Java 17 et Spring Boot. Il permet aux développeurs backend de scanner automatiquement leurs projets Java afin de :
+**SmartDevAnalyzer** est un outil intelligent développé avec **Java 17** et **Spring Boot**. Il permet aux développeurs backend de scanner automatiquement leurs projets Java afin de :
 
-🔐 1. Détecter des failles de sécurité :
-Contrôleurs non protégés (ex: absence de @PreAuthorize, @Secured, ou filtre de sécurité)
+## 🔐 1. Détecter des failles de sécurité :
+- Contrôleurs non protégés (ex: absence de `@PreAuthorize`, `@Secured`, ou filtre de sécurité)
+- Informations sensibles codées en dur (ex: mots de passe, tokens)
+- Dépendances vulnérables connues (analyse du `pom.xml` via **OWASP Dependency Check**)
 
-Informations sensibles codées en dur (ex: mots de passe, tokens)
+## 📘 2. Générer une documentation automatique des APIs REST :
+- Lecture des `@RestController`, `@RequestMapping`, `@GetMapping`, etc.
+- Extraction automatique des chemins, méthodes HTTP, types de retour, et paramètres
+- Génération en **JSON** ou **Markdown** d’un équivalent de Swagger (mais maison)
 
-Dépendances vulnérables connues (analyse du pom.xml via OWASP Dependency Check)
+---
 
-📘 2. Générer une documentation automatique des APIs REST :
-Lecture des @RestController, @RequestMapping, @GetMapping, etc.
+## 🧰 Stack technique
 
-Extraction automatique des chemins, méthodes HTTP, types de retour, et paramètres
+| Composant         | Technologie            |
+|------------------|------------------------|
+| Langage          | Java 17                |
+| Framework        | Spring Boot            |
+| Analyse Code     | JavaParser             |
+| Analyse Sécurité | OWASP Dependency-Check |
+| Logger           | SLF
 
-Génération en JSON ou Markdown d’un équivalent de Swagger (mais maison)
 
----------------------------------------------- 🧰 Stack technique---------------------------------------------------
 
-Composant	Technologie
-Langage	Java 17
-Framework	Spring Boot
-Analyse Code	JavaParser
-Analyse Sécurité	OWASP Dependency-Check
-Logger	SLF4J + Logback
-Tests	JUnit
 ---------------------------------------------- 🧱 Architecture du projet---------------------------------------------------
 
 ![image](https://github.com/user-attachments/assets/d75bb36e-2618-4d6f-b67f-5c7b4b96e584)
